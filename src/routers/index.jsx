@@ -3,12 +3,13 @@ import Login from "../pages/Login";
 import App from "../App";
 import Movies from "../pages/Movies";
 import Cotnent from "../components/main/content/Cotnent";
+import About from "../pages/About";
 
 // const AuthLayout = () => {
 //   return <Outlet />;
 // };
 
-export default createBrowserRouter([
+export default createBrowserRouter([    
   {
     element: <App />,
     children: [
@@ -19,12 +20,14 @@ export default createBrowserRouter([
       {
         element: <Cotnent />,
         path: "/",
-        children: [
-        ],
       },
       {
         path: "/movies",
         element: <Movies />,
+      },
+      {
+        path: "/abouts",
+        element: <About />,
       },
     ],
   },

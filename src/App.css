@@ -22,3 +22,7 @@ h1 {
     @apply bg-primary rounded-md overflow-hidden shadow-md shadow-primary relative w-full hover:shadow-lg hover:shadow-primary;
   }
 }
+.active {
+  background-color: rgb(22 64 91 / var(--tw-bg-opacity));
+  color: #fff;
+}

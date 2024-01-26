@@ -7,22 +7,21 @@ const items = [
     label: "Home",
     icon: <AiOutlineHome size="1.875rem" />,
     active: true,
-    url: '/',
-
+    url: "/",
   },
 
   {
     label: "Movie",
     icon: <AiOutlineHome size="1.875rem" />,
     active: false,
-    url: '/movies',
+    url: "/movies",
   },
 
   {
     label: "About",
     icon: <AiOutlineHome size="1.875rem" />,
     active: false,
-    url: '/about',
+    url: "/abouts",
   },
 ];
 export default function Nav() {
@@ -39,7 +38,7 @@ export default function Nav() {
           Phimmoi
         </h4>
         <span onClick={handleMenu} className=" inline-block md:hidden">
-          <BsJustify style={{ width : "40px " }}/>
+          <BsJustify style={{ width: "40px " }} />
         </span>
       </div>
       <ul className={`mx-4 my-2 ${isNavItem ? "block" : "hidden"}  md:block`}>
